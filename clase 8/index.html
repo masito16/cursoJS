@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Array for each</title>
+</head>
+<body>
+<script>
+
+let numeros = [12, 22, 30, 10, 34, 100];
+let nombres = ["juan", "zoilo", "andrea"];
+
+numeros.forEach (foo );
+
+function foo(a, b, c) {
+
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+var dobles = [];
+numeros.forEach(function(a){
+
+dobles.push ( a*2);
+
+
+});
+
+var cuadrados = numeros.map (a=>  a*a);
+
+console.log(dobles);
+console.log(cuadrados);
+
+console.log(numeros.some(function(a){
+
+return a > 150;
+
+}));
+
+console.log(numeros.every(function(a){
+
+return a > 1;
+
+}));
+
+
+//let varonesfilter = personas.filter( function(a){
+
+  //return persona.gender === 'Male';
+
+
+//});
+///console.log(varonesfilter);//*
+
+
+let nombreMujeres = personas.map(a=> a.first_name.lenght);
+
+
+</script>
+
+
+
+
+</body>
